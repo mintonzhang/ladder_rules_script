@@ -119,6 +119,7 @@ dns:
     - +.docker.io
     - +.market.xiaomi.com
     - +.push.apple.com
+    - +.jasolar.com
   nameserver-policy:
     '+.jasolar.com':
       - 172.28.7.70
@@ -192,6 +193,9 @@ rules:
   - RULE-SET, China, DIRECT
   - GEOIP, CN, DIRECT
 
+  # ja忽略
+  - DOMAIN-SUFFIX, jasolar.com, DIRECT
+  - DOMAIN, hf-mirror.com, DIRECT
   # 兜底规则
   - MATCH, 漏网之鱼
 
