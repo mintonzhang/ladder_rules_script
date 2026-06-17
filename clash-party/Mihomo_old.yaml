@@ -119,6 +119,12 @@ dns:
     - +.docker.io
     - +.market.xiaomi.com
     - +.push.apple.com
+  nameserver-policy:
+    '+.jasolar.com':
+      - 172.28.7.70
+      - 172.28.7.71
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
   default-nameserver:
     - 119.29.29.29
     - 180.184.1.1
